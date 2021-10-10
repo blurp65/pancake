@@ -34,10 +34,10 @@ keys() {
 echo "Adding GPG Keys"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 54404762BBB6E853
-###sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 871920D1991BC93C
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+###curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o $/usr/share/keyrings/docker-archive-###keyring.gpg
 }
 
 update() {
@@ -75,7 +75,7 @@ instDock() {
 ###else 
 ###sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-ce-archive-keyring.gpg
 echo "Installing Repo"
-sudo echo "deb [arch=amd64,i386 signed-by=/usr/share/keyrings/docker-ce-archive-keyring.gpg] https://download.docker.com/linux/debian bullseye nightly"  | sudo tee /etc/apt/sources.list.d/docker.list
+sudo echo "deb [arch=amd64,i386] https://download.docker.com/linux/debian bullseye nightly"  | sudo tee /etc/apt/sources.list.d/docker.list
 ###fi
 echo "Updating and Installing Docker"  ###Debug Message
 sudo apt update
