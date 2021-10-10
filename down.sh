@@ -75,7 +75,7 @@ instDock() {
 ###else 
 ###sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-ce-archive-keyring.gpg
 echo "Installing Repo"
-sudo echo "deb [arch=amd64,i386] https://download.docker.com/linux/debian bullseye nightly"  | sudo tee /etc/apt/sources.list.d/docker.list
+sudo echo "deb [arch=armhf] https://download.docker.com/linux/debian bullseye nightly"  | sudo tee /etc/apt/sources.list.d/docker.list
 ###fi
 echo "Updating and Installing Docker"  ###Debug Message
 sudo apt update
