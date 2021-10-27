@@ -57,7 +57,7 @@ g++-11-aarch64-linux-gnu patch gzip bzip2 perl tar cpio unzip rsync file bc wget
 python-all-dev python-all-dbg python3-all python3-all-dbg python3-all-dev qt3d5-dev qt3d5-dev-tools gtk2-engines glade cvs git subversion rsync \
 asciidoc w3m graphviz flex bison swig python-dev-is-python2 debos bmap-tools f2fs-tools qemu-system-x86 qemu-user-static binfmt-support squashfs-tools-ng \
 apt-transport-https ca-certificates curl gnupg-agent software-properties-common dialog libgtk2.0-dev libglib2.0-dev libglade2-dev qemu-system \
-libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager uuid* git-core gitk git-gui curl lvm2 thin-provisioning-tools python3-pkg-resources python3-virtualenv python3-oauth2client xz-utils python3.6
+libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager uuid* git-core gitk git-gui curl lvm2 thin-provisioning-tools python3-pkg-resources python3-virtualenv python3-oauth2client xz-utils python3.6 nano 
 sudo apt dist-upgrade
 }
 
