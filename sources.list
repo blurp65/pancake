@@ -1,8 +1,8 @@
 #deb cdrom:[Xubuntu 21.04 _Hirsute Hippo_ - Release amd64 (20210420)]/ hirsute main multiverse restricted universe
 
 
-###deb http://http.kali.org/kali kali-rolling main non-free contrib
-###deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+deb-src http://http.kali.org/kali kali-rolling main non-free contrib
 
 deb http://deb.debian.org/debian/ testing main contrib non-free
 deb-src http://deb.debian.org/debian/ testing main contrib non-free
