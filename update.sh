@@ -14,7 +14,7 @@ mkdir ~/wok
 cd ~/wok
 sudo apt update
 sudo apt -y install git
-git clone https://github.com/shell832/pancake.git
+git clone https://github.com/blurp65/pancake.git
 fi
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
