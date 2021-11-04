@@ -36,6 +36,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 54404762BBB6E853
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED444FF07D8D0BF6
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 871920D1991BC93C
 ###curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o $/usr/share/keyrings/docker-archive-###keyring.gpg
 }
@@ -84,7 +85,7 @@ sudo apt -y install docker containerd.io
 
 buildKernel() {
 echo "Downloading kernel building files" 
-sudo apt build-dep linux linux-image-$(uname -r)
+### sudo apt build-dep linux linux-image-$(uname -r)
 }
 
 cleanUP() {
