@@ -91,6 +91,8 @@ echo "Downloading kernel building files"
 cleanUP() {
 echo "Removing unNeeded Packages"
 sudo apt -y autoremove
+sudo rm -r ~/pancake
+cd ~/wok/pancake
 }
 
 mvSource
