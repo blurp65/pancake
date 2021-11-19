@@ -3,15 +3,15 @@
 echo Hello World
 
 mvSource() {
-###FILE=~/wok/sources.list
+###FILE=~/work/sources.list
 FILE=~/pancake
-BOBO=~/wok
+BOBO=~/work
 YUM=/etc/sources.list.bak
 if [ -f "$BOBO" ]; then
     echo "$BOBO exists."
 else 
-mkdir ~/wok
-cd ~/wok
+mkdir ~/work
+cd ~/work
 sudo apt update
 sudo apt -y install git
 git clone https://github.com/blurp65/pancake.git
@@ -90,7 +90,7 @@ if [ -f "$meFlunk" ]; then
     echo "$meFlunk exists."
 sudo rm -r ~/pancake
 fi
-cd ~/wok/pancake
+cd ~/work/pancake
 }
 
 mvSource
