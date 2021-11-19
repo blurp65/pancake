@@ -45,14 +45,14 @@ update() {
 echo "Updating System"
 sudo apt update
 echo "installing acrh'z"
-sudo dpkg --add-architecture i386
+###sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture armhf
-sudo dpkg --add-architecture armel
+###sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture arm64
-echo "Fixings"
-sudo sed -i 's/\bdeb\b/& [arch=arm64,armhf,amd64,i386]/' /etc/apt/sources.list.d/cros.list
+###echo "Fixings"
+###sudo sed -i 's/\bdeb\b/& [arch=arm64,armhf,amd64,i386]/' /etc/apt/sources.list.d/cros.list
 echo insatalling development packages
-sudo apt install -y gnupg lsb-release build-essential zip curl zlib1g-dev libc6-dev libncurses5 lib32ncurses-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig libncurses-dev gawk openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf sed make cmake binutils gcc-11 gcc-11-aarch64-linux-gnu gcc-11-arm-linux-gnueabihf g++-11 g++-11-aarch64-linux-gnu g++-11-arm-linux-gnueabihf g++-11-aarch64-linux-gnu patch gzip bzip2 perl tar cpio unzip rsync file bc wget python-all python-all-dev python-all-dbg python3-all python3-all-dbg python3-all-dev qt3d5-dev qt3d5-dev-tools gtk2-engines glade cvs git subversion rsync asciidoc w3m graphviz flex bison swig python-dev-is-python2 debos bmap-tools f2fs-tools qemu-system-x86 qemu-user-static binfmt-support squashfs-tools-ng apt-transport-https ca-certificates curl gnupg-agent software-properties-common dialog libgtk2.0-dev libglib2.0-dev libglade2-dev qemu-system libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager uuid* git-core gitk git-gui curl lvm2 thin-provisioning-tools python3-pkg-resources python3-virtualenv python3-oauth2client xz-utils python3.6 nano screen fakeroot ncur 
+sudo apt install -y gnupg lsb-release build-essential zip curl zlib1g-dev libc6-dev libncurses5 x11proto-core-dev libx11-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig libncurses-dev gawk openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf sed make cmake binutils gcc-11 gcc-11-aarch64-linux-gnu gcc-11-arm-linux-gnueabihf g++-11 g++-11-aarch64-linux-gnu g++-11-arm-linux-gnueabihf g++-11-aarch64-linux-gnu patch gzip bzip2 perl tar cpio unzip rsync file bc wget python-all python-all-dev python-all-dbg python3-all python3-all-dbg python3-all-dev qt3d5-dev qt3d5-dev-tools gtk2-engines glade cvs git subversion rsync asciidoc w3m graphviz flex bison swig python-dev-is-python2 bmap-tools f2fs-tools qemu-system-x86 qemu-user-static binfmt-support squashfs-tools-ng apt-transport-https ca-certificates curl gnupg-agent software-properties-common dialog libgtk2.0-dev libglib2.0-dev libglade2-dev qemu-system libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager uuid uuidcdef  gitk git-gui curl lvm2 thin-provisioning-tools python3-pkg-resources python3-virtualenv python3-oauth2client xz-utils python-is-python3 nano screen fakeroot uuid-runtime uuid-dev
 sudo apt dist-upgrade
 }
 
@@ -79,7 +79,7 @@ sudo apt -y install docker containerd.io
 
 buildKernel() {
 echo "Downloading kernel building files" 
-sudo apt build-dep linux-image-$(uname -r)
+###sudo apt build-dep linux-image-$(uname -r)
 }
 
 cleanUP() {
