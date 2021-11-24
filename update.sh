@@ -96,7 +96,7 @@ cd ~/work/pancake
 mvSource
 keys
 update
-rmDock
-instDock
-buildKernel
+###rmDock
+###instDock
+###buildKernel
 cleanUP
